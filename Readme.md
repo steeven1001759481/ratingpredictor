@@ -2,7 +2,14 @@
 
 Name: Steeven Pereira<br>
 ID: 1001759481
+***
+For using locally :
 
+1. Install all dependencies mentioned in requirement.txt
+2. To run the Flask app run app.py
+>python app.py
+3. Type localhost:5000 in your browser to open the app in browser
+***
 <h1>Summary:</h1><br>
 Text analysis is an important part of AI technology that uses Natural Language Processing to transform unstructured text into Normalized, Structured data suitable for Machine Learning algorithms. There are a lot of different techniques which can convert raw textual data into meaningfull information by performing certain mathematical computations that convert the text data into numerical data. The aim of this project was to build a prediction model that can effectively predict the rating of a board game review. The rating predictor model was trained on the 'comment' column of the 'bgg-13m-reviews' file. The main challenge of this project was handling the large scale data and creating a prediction model that can be deployed on cloud to provide the predicted output in good time. The textual data was cleaned by removing the 'urls', 'emojis', and other special characters that were redundant for the classification model. Stopwords were also removed from the data. Since the data to be feed to the machine learning model was of string datatype, it had to be converted to a format suitable for the prediction model. Tfid vectorization was used to transform the data. Range Accuracy was also computed with a buffer of 1. The data was trained on four classification algorithms namely: <ul><li>Ridge Classifier</li><li>Multinomial Naive Bayes Classifier</li><li>Linear SVC Classifier</li><li>Ensemble</li></ul><br>
 The accuracy obtained in each model: <ul><li>Ridge Classifier: 31.94%</li><li>Multinomial Naive Bayes Classifier: 30.7%</li><li>Linear SVC Classifier: 30.8%</li><li>Ensemble: 31.72%</li></ul><br>
